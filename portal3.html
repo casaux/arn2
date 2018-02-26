@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+
+		var email = location.hash.substring(1,location.hash.length);
+		
+		if(!email || email==""){
+			email = "test@test.com.au";
+		}
+		
+		$("#email").html(email);
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		<h1>Create an account</h1>
+		
+		<p class="guidance">We've sent an email to <span id="email"></span> with a verification code. Please enter the code below to continue.</p>
+		
+
+		<label>
+			<span>Verification code</span>
+			<input type="text">
+		</label>
+		
+		<a class="button" href="portal4.html">Next</a>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>

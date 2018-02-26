@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
+			
+			firstName=", "+firstName;
+			
+		}
+		
+		$("#firstName").html(firstName);	
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		
+		<img src="success.png" />
+		
+		<h2>Welcome to the CASA Self Service Portal<span id="firstName"></span> </h2>
+		
+		<p class="guidance">To access CASA Services you'll need to apply for an Aviation Reference Number (ARN).</p>
+		<p class="guidance">You will be required to provide 100 points of identification to be issued an ARN.</p>
+
+<p class="guidance">Only individuals can apply for an ARN here. If you are organisation, <a>please apply here</a>.</p>
+
+		<br /><br />
+		
+		<a class="button" href="portal6.html">Begin ARN application</a>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>

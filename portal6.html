@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
+			
+			firstName=", "+firstName;
+			
+		}
+		
+		$("#firstName").html(firstName);	
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		
+		<h1>Aviation Reference Number application</h1>
+		
+		
+		<h2>Personal details</h2>
+		
+		<p>You are applying as <strong>Bob Furzer</strong>.</p>
+		
+		<p>This name must exactly match the name on your identification. If Bob Furzer doesn’t match what’s on your identification, <a>please update your name</a>.</p>
+		
+		<p><strong>Have you ever been known by a previous name?</strong></p>
+		
+		<label>
+			<input type="radio" value="0" name="previous" checked="checked"> No
+			<br style="clear:both" />
+			<input type="radio" value="1" name="previous"> Yes
+		</label>
+		
+		
+		<a class="button" href="portal7.html">Next</a>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>

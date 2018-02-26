@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+		$(".button").bind( "click", function() {
+			
+			
+			location.href="portal5.html#"+$("#CASAname").val();
+			
+		});
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		<h1>Create an account</h1>
+		
+
+		<label>
+			<span>First name</span>
+			<input id="CASAname" type="text">
+		</label>
+		
+		<label>
+			<span>Last name</span>
+			<input type="text">
+		</label>
+		
+		<label>
+			<span>Password</span>
+			<input type="password">
+		</label>		
+		
+			
+		<p class="sub">Your password must be at least seven characters and<br /> include at least one number</p>
+		
+		<label>
+			<span>Confirm password</span>
+			<input type="password">
+		</label>	
+		
+		
+		
+		<label>
+		<input type="checkbox">I agree to the <a>terms and conditions</a> of the<br /> CASA online portal
+		</label>
+		
+		
+		
+		<p class="button" href="portal5.html">Next</p>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>
